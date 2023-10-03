@@ -67,15 +67,6 @@ Data Interoperability doc and related Automation blogs<br/>
 JSON tutorial references:<br/>
 * [Learn JSON](https://www.youtube.com/watch?v=iiADhChRriM)<br/>
 
-[Opens in new tab](https://external.ink?to=/google.com)
-
-## Demo Markdown
-
-[button text‌](https://eddymens.com)
-
-<script src='https://cdn.jsdelivr.net/gh/eddymens/markdown-external-link-script@v2.0.0/main.min.js'></script>
-
-
 ## Issues
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
