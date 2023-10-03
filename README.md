@@ -47,6 +47,12 @@ Utility Network docs:<br/>
 
 Utility Network blogs (latest on top):<br/>
 
+Name and URL	Pro/Enterprise Version	Date
+Adding Description to Export Subnetwork JSON	2.4	3/10/2020 12:00:00 AM
+Command line automation for Utility Network blog	2.1/10.6	6/5/2018 12:00:00 AM
+Web Trace tool Blog	2.1/10.6	2/28/2018 12:00:00 AM
+
+
 Name and URL| Version | Date 
 |:---|:---:||:---:
 [Web Trace tool Blog](https://www.esri.com/arcgis-blog/products/utility-network/data-management/a-technical-walk-through-for-a-simple-utility-network-web-trace-tool-with-javascript/) | Pro 2.2 |
