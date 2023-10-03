@@ -13,10 +13,6 @@ You can still find the blog's workspace solution [from part two of the blog](htt
 ## Features
 Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, CAD and shapefile.
 
-## Precautions
-1. The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. Best efforts were made to provide dynamic features in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Data Interoperability Workbench app when reading source datasets into the workflow canvass.
-2. Since utility networks are not created exactly with the same schema, after you configured your utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. 
-3. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the tokengetter will need to be replaced by an HTTPCaller using that new web connection.
 
 ## Limitations
 Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
@@ -24,7 +20,14 @@ Utility Networks that are stored in file geodatabase or mobile geodatabases are 
 ## Instructions
 1. Fork and then clone the repo. 
 2. Open the FME workspace template (fmwt) file and unzip to your desired destination.
+> [!NOTE]
+> The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. Best efforts were made to provide dynamic features in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Data Interoperability Workbench app when reading source datasets into the workflow canvass.
+
 3. Re-configure the workspace to your own utility network. 
+> [!IMPORTANT]
+> Since utility networks are not created exactly with the same schema, after you configured your utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the tokengetter will need to be replaced by an HTTPCaller using that new web connection.
+
+
 
 ## Requirements
 * Data Interoperability for ArcGIS Pro 3.1 or higher
