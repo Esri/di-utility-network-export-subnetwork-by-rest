@@ -70,6 +70,7 @@ JSON tutorial references:<br/>
 
 <a href="google.com" target="_blank">Opens in new tab</a>
 
+[Opens in new tab](https://external.ink?to=/google.com)
 
 ## Issues
 
