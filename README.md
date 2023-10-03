@@ -14,8 +14,8 @@ You can still find the blog's workspace solution [from part two of the blog](htt
 Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, CAD and shapefile.
 
 ## Precautions
-1. The solution is meant as a guide. This workspace will not run without configuring correctly to your own enterprise utility network. Best efforts were made to provide dynamic fetures in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Data Interoperability Workbench app when reading source datasets into the workflow canvass.
-2. Since not all utility networks are created exactly the same, after you configured your utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. 
+1. The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. Best efforts were made to provide dynamic features in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Data Interoperability Workbench app when reading source datasets into the workflow canvass.
+2. Since utility networks are not created exactly with the same schema, after you configured your utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. 
 3. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the tokengetter will need to be replaced by an HTTPCaller using that new web connection.
 
 ## Limitations
@@ -24,13 +24,19 @@ Utility Networks that are stored in file geodatabase or mobile geodatabases are 
 ## Instructions
 1. Fork and then clone the repo. 
 2. Open the FME workspace template (fmwt) file and unzip to your desired destination.
-3. Re-configure the worksspace to your own utility network. 
-
+3. Re-configure the workspace to your own utility network. 
 
 ## Requirements
 * Data Interoperability for ArcGIS Pro 3.1 or higher
 * ArcGIS Pro 3.1 or  higher
 * Enterprise Utility Network with a schema of UNv6 or higher
+
+## Suggestions for reconfiguring the solution
+1. Enable both the Feature Cache and Feature Counts tools while authoring. When you are satisfied with the state of your solution, 
+2. Test small, test often at the beginning. Start with the reader first.
+3. Use the Play buttons on the canvass object as you tweak the existing solution.
+4. Avoid Importing feature types on an existing format reader. Use Add reader format to add the first feature type/s. After the schema hydrates connect to the existing transformer from which the original reader is connected to. Once the new feature types is connected to the transformer, you can delete the original reader.
+5. Configure the Export Subnetwork rest API http caller to your desired tool parameters. Start with Pro, configure the GP tool, then run. Capture the paramteres using atool like Fiddler or Postman.
 
 ## Resources
 Below are links to essential references used in the blogs.
