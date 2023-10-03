@@ -1,32 +1,39 @@
 # di-utility-network-export-subnetwork-by-rest
  
-This repo is to provide a no-code solution for automating Exporting Subnetwork for a Utility Network dataset published on an ArcGIS Enterprise platform.
+This repo provides a no-code solution for automating Exporting Subnetwork for a Utility Network dataset published on an ArcGIS Enterprise platform.
 
 Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
 
-The original source of this no-code solution was first published in ArcGis Blog in these two-part blog written by Jon De Rose and Renato Salvaleon. Leveraging
+The original source of this no-code solution was first published in ArcGis Blog in these two-part blog written by Jon De Rose and Renato Salvaleon. 
 
-Data for External Systems - Automating Export Subnetwork using Data Interoperability<br/>
+Leveraging Data for External Systems - Automating Export Subnetwork using Data Interoperability<br/>
 [Part One ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability/)<br/>
 [Part Two ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability-part2/)<br/>
 
-You can still find the data interop workspace solution is also [available from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123). <br/> or in the [UNv3 release page.]([url](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)).
+You can still find the blog's workspace solution [from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123). <br/> or in the [UNv3 release page.]([url](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)).
 
 
 ## Features
-* Converts result JSON of an export subnetwork REST API call to the following outputs: File GDB, geopackage and shapfile.
-* This workspace includes generating description of the domain, asset groups, and asset types of the exported subnetwork.
+* Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, geopackage and shapfile.
+
+## Precautions
+1. The solution is meant as a guide. Attempts were made to provide dynamic schema in the workflow. However, changes will have to be applied in your own solution to make this work. These are known behaviors of the Data Interoperability Workbench app when reading source datasets into the workflow canvass.
+2. This workspace will not run without configuring correctly to your own enterprise utility network.
+3. Since not all utility networks are created exactly the same, after you configured your utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. 
+4. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 for your authentication a web connection must be created and replacing the tokengetter with an HTTPCaller.
 
 ## Instructions
 
 1. Fork and then clone the repo. 
-2. Read the blog before you re-configure to your own utility network before you run.
+2. Open the FME workspace template (fmwt) file and unzip to your desired destination.
+3. Re-configure to your own utility network before you run. 
+
 
 ## Requirements
 
-* Data Interoperability for ArcGIS Pro 2.6 or higher
-* ArcGIS Pro 2.6 or  higher
-* Enterprise Utility Network with a schema of UNv3 or higher
+* Data Interoperability for ArcGIS Pro 3.1 or higher
+* ArcGIS Pro 3.1 or  higher
+* Enterprise Utility Network with a schema of UNv6 or higher
 
 ## Resources
 
