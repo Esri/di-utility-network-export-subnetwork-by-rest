@@ -1,3 +1,4 @@
+<base target="_blank">
 # di-utility-network-export-subnetwork-by-rest
  
 This repo provides a no-code solution using ArcGIS Data Interoperability for ArcGIS Pro to automate Exporting Subnetwork for a Utility Network dataset published on an ArcGIS Enterprise platform on the most current UN version.
