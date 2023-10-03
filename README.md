@@ -47,11 +47,10 @@ Utility Network docs:<br/>
 
 Utility Network blogs (latest on top):<br/>
 
-|Name and URL| Version | Date |
+|Name and URL| Version | Date | <br/>
 |:---:|:---:||:---:| <br/>
-|* [Web Trace tool Blog](https://www.esri.com/arcgis-blog/products/utility-network/data-management/a-technical-walk-through-for-a-simple-utility-network-web-trace-tool-with-javascript/)| | |v
+|* [Web Trace tool Blog](https://www.esri.com/arcgis-blog/products/utility-network/data-management/a-technical-walk-through-for-a-simple-utility-network-web-trace-tool-with-javascript/)| | | <br/>
 |* [Command line automation for Utility Network blog](https://www.esri.com/arcgis-blog/products/utility-network/administration/automating-utility-network-functions-using-command-line/)| | |<br/>
-
 |* [Adding Description to Export Subnetwork JSON blog](https://community.esri.com/t5/arcgis-utility-network-questions/adding-descriptions-to-export-subnetwork-json/m-p/367933)| | |<br/>
 
 Data Interopearbility Automation <br/>
