@@ -53,13 +53,13 @@ Name and Link | Pro/Enterprise Version | Date
 [Command line automation for Utility Network blog](https://www.esri.com/arcgis-blog/products/utility-network/administration/automating-utility-network-functions-using-command-line/)| 2.1/10.6	| 6/5/2018
 [Web Trace tool Blog](https://www.esri.com/arcgis-blog/products/utility-network/data-management/a-technical-walk-through-for-a-simple-utility-network-web-trace-tool-with-javascript/) | Pro 2.1/10.6 | 2/28/2018
 
-Data Interoperability Automation <br/>
+Data Interoperability doc and Automation blogs<br/>
 * [Spatial ETL Tool (Doc)](https://pro.arcgis.com/en/pro-app/latest/help/data/data-interoperability/spatial-etl-tools.htm)
 * [Automate yor ETL Processes blog](https://community.esri.com/t5/arcgis-data-interoperability-blog/automate-your-etl-processes-on-a-schedule-two-ways/ba-p/883616)<br/>
-
-JSON tutorial references:<br/>
 * [Ontario511](https://pm.maps.arcgis.com/home/item.html?id=4ec1d2420089451bb173e90ce01e2e0a)<br/>
 * [Import Building GeoJSON](https://pm.maps.arcgis.com/home/item.html?id=9da0f8ae5fee45aca11bf77f712884c8)<br/>
+
+JSON tutorial references:<br/>
 * [Learn JSON](https://www.youtube.com/watch?v=iiADhChRriM)<br/>
 
 
