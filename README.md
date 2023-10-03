@@ -2,17 +2,16 @@
  
 This repo provides a no-code solution using ArcGIS Data Interoperability for ArcGIS Pro to automate Exporting Subnetwork for a Utility Network dataset published on an ArcGIS Enterprise platform on the most current UN version.
 
-The original source of this no-code solution was first published in ArcGis Blog in these two-part blog written by Jon De Rose and Renato Salvaleon. 
+The original source of this no-code solution was first published in ArcGis Blog in the two-part blog series written by Jon De Rose and Renato Salvaleon. 
 
 Leveraging Data for External Systems - Automating Export Subnetwork using Data Interoperability<br/>
 [Part One ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability/)<br/>
 [Part Two ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability-part2/)<br/>
 
-You can still find the blog's workspace solution [from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123) or in this repo's [UNv3 release page.]([url](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)).
-
+You can still find the blog's workspace solution [from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123) or in this repo's [UNv3 release page.](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0).
 
 ## Features
-* Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, geopackage and shapfile.
+Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, CAD and shapefile.
 
 ## Precautions
 1. The solution is meant as a guide. This workspace will not run without configuring correctly to your own enterprise utility network. Best efforts were made to provide dynamic fetures in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Data Interoperability Workbench app when reading source datasets into the workflow canvass.
