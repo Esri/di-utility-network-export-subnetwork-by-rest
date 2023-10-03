@@ -1,13 +1,16 @@
 # di-utility-network-export-subnetwork-by-rest
-Source: ArcGis Blog for Utility Network Export Subnetwork
  
-This repo is for sharing the workspace published in this two-part blog in ArcGIS Blog. The blog was written by Jon De Rose and Renato Salvaleon.
+This repo is to provide a no-code solution for automating Exporting Subnetwork for a Utility Network dataset published on an ArcGIS Enterprise platform.
 
-Leveraging Data for External Systems - Automating Export Subnetwork using Data Interoperability<br/>
+Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
+
+The original source of this no-code solution was first published in ArcGis Blog in these two-part blog written by Jon De Rose and Renato Salvaleon. Leveraging
+
+Data for External Systems - Automating Export Subnetwork using Data Interoperability<br/>
 [Part One ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability/)<br/>
 [Part Two ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability-part2/)<br/>
 
-This data interop workspace solution is also [available from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123). <br/>
+You can still find the data interop workspace solution is also [available from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123). <br/> or in the [UNv3 release page.]([url](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)).
 
 
 ## Features
