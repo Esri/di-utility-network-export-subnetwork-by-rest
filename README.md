@@ -47,10 +47,22 @@ Utility Network docs:<br/>
 
 Utility Network blogs (latest on top):<br/>
 
+Name and Link | Pro/Enterprise Version | Date
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 Name and URL	Pro/Enterprise Version	Date
-Adding Description to Export Subnetwork JSON	2.4	3/10/2020 12:00:00 AM
-Command line automation for Utility Network blog	2.1/10.6	6/5/2018 12:00:00 AM
-Web Trace tool Blog	2.1/10.6	2/28/2018 12:00:00 AM
+Adding Description to Export Subnetwork JSON	2.4	3/10/2020
+Command line automation for Utility Network blog	2.1/10.6	6/5/2018
+Web Trace tool Blog	2.1/10.6	2/28/2018
+
+
+
+Name and URL	Pro/Enterprise Version	Date
+Adding Description to Export Subnetwork JSON	2.4	3/10/2020 
+Command line automation for Utility Network blog	2.1/10.6	6/5/2018 
+Web Trace tool Blog	2.1/10.6	2/28/2018 
 
 
 Name and URL| Version | Date 
