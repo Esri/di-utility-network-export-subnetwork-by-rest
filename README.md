@@ -8,8 +8,7 @@ Leveraging Data for External Systems - Automating Export Subnetwork using Data I
 [Part One ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability/)<br/>
 [Part Two ](https://www.esri.com/arcgis-blog/products/utility-network/data-management/exporting-subnetworks-using-data-interoperability-part2/)<br/>
 
-You can still find the blog's workspace solution [from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123) or in this repo's [UNv3 release page.](../di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)   
-[v3](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0).
+You can still find the blog's workspace solution [from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123) or in this repo's [UNv3 release page.](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)
 
 ## Features
 Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, CAD and shapefile.
@@ -27,7 +26,7 @@ Utility Networks that are stored in file geodatabase or mobile geodatabases are 
 > The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the [ESRIOnlineTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter) will need to be replaced by an HTTPCaller using that new web connection. 
 3. Re-configure the workspace to your own utility network. 
 > [!IMPORTANT]
-> Since utility networks are not created exactly with the same schema, after you configured your readers to your own utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. Best efforts were made to provide dynamic features in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Workbench app when reading source datasets into the workflow canvass. For aditional help read the [Suggestions for reconfiguring the solution](/README.md/#suggestions-for-reconfiguring-the-solution) section below
+> Since utility networks are not created exactly with the same schema, after you configured your readers to your own utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. Best efforts were made to provide dynamic features in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Workbench app when reading source datasets into the workflow canvass. For aditional help read the [Suggestions for reconfiguring the solution](/README.md#suggestions-for-reconfiguring-the-solution) section below.
 
 
 
