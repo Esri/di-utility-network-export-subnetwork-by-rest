@@ -68,6 +68,8 @@ Data Interoperability doc and related Automation blogs<br/>
 JSON tutorial references:<br/>
 * [Learn JSON](https://www.youtube.com/watch?v=iiADhChRriM)<br/>
 
+<a href="placeholder.com" target="_blank">Opens in new tab</a>
+
 
 ## Issues
 
