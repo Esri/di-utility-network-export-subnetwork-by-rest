@@ -17,7 +17,7 @@ Optional:
 4. Reconfigure the following Query String parameters of the Export Subnetwork HTTPCaller below <br/>
 ![Query String Parameters of Export Subnetwork][HTTPCaller query string] <br/>
 
-using the GP pane tool as reference, below.<br/>
+using the GP tool pane as reference, below.<br/>
 ![Export Subnetwork GP pane populated][ExportSub GP pane]<br/>
 
 
@@ -42,6 +42,8 @@ moment | | (default)
 domanNetworkName| Domain Network | _Electric_
 tierName | Tier |_Electric Distribution_
 exportAcknowledgement| Set export acknowledged | (default)
+
+The next two are also for the Query string parameters and there are no exact equivalent to the GP pane as they are a collection of the GP tool parameters implemented in the REST API. 
 
 ### traceConfiguration
 
