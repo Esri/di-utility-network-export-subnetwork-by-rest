@@ -40,5 +40,5 @@ The current solution configuration are below:
 5. Configure the Export Subnetwork rest API http caller to your desired tool parameters. Start with Pro, configure the GP tool, then run. Capture the paramteres using atool like Fiddler or Postman.
 
 
-[HTTPCaller query string]: image.png
-[ExportSub GP pane]: image-1.png
+[HTTPCaller query string]: ./image.png
+[ExportSub GP pane]: ./image-1.png
