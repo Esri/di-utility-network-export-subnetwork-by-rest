@@ -31,16 +31,16 @@ HTTP Method: Get
 JSON Result output: _serverResponse
 
 ### Query String Parameters
-[Rest API parameters](https://developers.arcgis.com/rest/services-reference/enterprise/exportsubnetwork-utility-network-server-.htm) | [GP Pane parameters](https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/export-subnetwork.htm) | [Workbench app User parameters](http://docs.safe.com/fme/2017.1/html/FME_Desktop_Documentation/FME_Workbench/Workbench/published_private_parameters.htm)
+[Rest API parameters](https://developers.arcgis.com/rest/services-reference/enterprise/exportsubnetwork-utility-network-server-.htm) | [GP Pane parameters](https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/export-subnetwork.htm) | [Workbench app parameter values](http://docs.safe.com/fme/2017.1/html/FME_Desktop_Documentation/FME_Workbench/Workbench/published_private_parameters.htm) [^1]
 --- | --- | ---
 token|  |	@Value(token)
-subnetworkName| Subnetwork Name| ${SunetworkName}
-f | |pjson
+subnetworkName| Subnetwork Name| ${SubnetworkName}
+f | |_pjson_
 gdbVersion | | (default)
 sessionId | | (default)
 moment | | (default)
-domanNetworkName| Domain Netowrk | Electric
-tierName | Tier |Electric Distribution
+domanNetworkName| Domain Network | _Electric_
+tierName | Tier |_Electric Distribution_
 exportAcknowledgement| Set export acknowledged | (default)
 
 ### traceConfiguration
@@ -129,3 +129,5 @@ exportAcknowledgement| Set export acknowledged | (default)
 
 [HTTPCaller query string]: image.png
 [ExportSub GP pane]: image-1.png
+
+[^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is an attribute name.
