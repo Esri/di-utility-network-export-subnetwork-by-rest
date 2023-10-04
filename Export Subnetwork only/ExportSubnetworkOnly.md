@@ -14,15 +14,34 @@ This solution uses the JSON return of the Export Subnetwork REST api and relies 
 > If the query string parameters of the Export Subnetwork is configured sufficiently for the destination data, there is no further configuration needed.<br/>
 
 Optional:
-4. Reconfigure the following Query String parameters of the Export Subnetwork HTTPCaller below
+4. Reconfigure the following Query String parameters of the Export Subnetwork HTTPCaller below <br/>
 ![Query String Parameters of Export Subnetwork][HTTPCaller query string] <br/>
 
-using the GP pane tool as reference, below.
-![Export Subnetwork GP pane populated][ExportSub GP pane]
+using the GP pane tool as reference, below.<br/>
+![Export Subnetwork GP pane populated][ExportSub GP pane]<br/>
 
-## Query String Parameters
 
-The current configuration are below:
+
+## Export Subnetwork HTTPCaller Configuration
+
+The current solution configuration are below:
+
+Request URL: $(HostUrl)/server/rest/services/NapervilleElectric31_SQLServer/UtilityNetworkServer/exportSubnetwork
+HTTP Method: Get
+JSON Result output: _serverResponse
+
+### Query String Parameters
+Rest API parameters | GP Pane parameters | Workbench app parameters, attribute names, or attribute values
+--- | --- | ---
+token|  |	@Value(token)
+subnetworkName| Subnetwork Name| ${SunetworkName}
+f | |pjson
+gdbVersion | | (default)
+sessionId | | (default)
+moment | | (default)
+domanNetworkName| Domain Netowrk | Electric
+tierName | Tier |Electric Distribution
+exportAcknowledgement| Set export acknowledged | (default)
 
 ### traceConfiguration
 
@@ -95,11 +114,6 @@ The current configuration are below:
 ]
 
 ```
-
-
-
-
-
 
 
 ## Suggestions for reconfiguring the solution
