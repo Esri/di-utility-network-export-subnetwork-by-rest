@@ -46,12 +46,13 @@ Utility Networks that are stored in file geodatabase or mobile geodatabases are 
 * ArcGIS Pro 3.1 or  higher
 * Enterprise Utility Network with a schema of UNv6 or higher
 
-## Suggestions for reconfiguring the solution
-1. Enable both the Feature Cache and Feature Counts tools while authoring. When you are satisfied with the state of your solution, 
+## Suggestions for modifying the solutions
+1. Enable both the Feature Cache and Feature Counts tools while authoring. 
 2. Test small, test often at the beginning. Start with the reader first.
-3. Use the Play buttons on the canvass object as you tweak the existing solution.
-4. Avoid Importing feature types on an existing format reader. Use Add reader format to add the first feature type/s. After the schema hydrates connect to the existing transformer from which the original reader is connected to. Once the new feature types is connected to the transformer, you can delete the original reader.
-5. Configure the Export Subnetwork rest API http caller to your desired tool parameters. Start with Pro, configure the GP tool, then run. Capture the paramteres using atool like Fiddler or Postman.
+3. Use the Play buttons on the canvass object as you tweak the existing solution,  until you get to your destination datasets.
+4. When configuring your own utlity network for this solution, leave the existing format reader on the canvas and use the Add reader tool. After the schema hydrates connect to the existing transformer from which the original reader is connected to. Once the new feature types is connected to the transformer, you can delete the original reader from the navigation pane.
+5. When you are satisfied with the state of your solution, you can disable both Feature Cache and Feature Counts. 
+
 
 ## Resources
 Below are links to essential references used in the blogs.

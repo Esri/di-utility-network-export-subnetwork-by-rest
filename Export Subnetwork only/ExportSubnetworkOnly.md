@@ -31,7 +31,7 @@ HTTP Method: Get
 JSON Result output: _serverResponse
 
 ### Query String Parameters
-[Rest API parameters](https://developers.arcgis.com/rest/services-reference/enterprise/exportsubnetwork-utility-network-server-.htm) | [GP Pane parameters](https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/export-subnetwork.htm) | [Workbench app parameter values](http://docs.safe.com/fme/2017.1/html/FME_Desktop_Documentation/FME_Workbench/Workbench/published_private_parameters.htm) [^1]
+[Rest API parameter](https://developers.arcgis.com/rest/services-reference/enterprise/exportsubnetwork-utility-network-server-.htm) | [GP Pane parameter](https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/export-subnetwork.htm) | [Workbench app parameter value](http://docs.safe.com/fme/2017.1/html/FME_Desktop_Documentation/FME_Workbench/Workbench/published_private_parameters.htm) [^1]
 --- | --- | ---
 token|  |	@Value(token)
 subnetworkName| Subnetwork Name| ${SubnetworkName}
@@ -117,19 +117,11 @@ The next two are also for the Query string parameters and there are no exact equ
 
 ```
 
-
-## Suggestions for reconfiguring the solution
-1. Enable both the Feature Cache and Feature Counts tools while authoring. When you are satisfied with the state of your solution, 
-2. Test small, test often at the beginning. Start with the reader first.
-3. Use the Play buttons on the canvass object as you tweak the existing solution.
-4. Avoid Importing feature types on an existing format reader. Use Add reader format to add the first feature type/s. After the schema hydrates connect to the existing transformer from which the original reader is connected to. Once the new feature types is connected to the transformer, you can delete the original reader.
+## Suggestions for configuring ExportSubnetwork
 5. Configure the Export Subnetwork rest API http caller to your desired tool parameters. Start with Pro, configure the GP tool, then run. Capture the paramteres using atool like Fiddler or Postman.
-
-[](Esri Tags: Data Interoperability for ArcGIS Pro)
-[](Esri Tags: Utility Network)
 
 
 [HTTPCaller query string]: image.png
 [ExportSub GP pane]: image-1.png
 
-[^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is an attribute name.
+[^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
