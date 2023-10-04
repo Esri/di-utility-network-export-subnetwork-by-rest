@@ -31,7 +31,7 @@ HTTP Method: Get
 JSON Result output: _serverResponse
 
 ### Query String Parameters
-Rest API parameters | GP Pane parameters | Workbench app parameters, attribute names, or attribute values
+[Rest API parameters](https://developers.arcgis.com/rest/services-reference/enterprise/exportsubnetwork-utility-network-server-.htm) | [GP Pane parameters](https://pro.arcgis.com/en/pro-app/latest/tool-reference/utility-networks/export-subnetwork.htm) | [Workbench app User parameters](http://docs.safe.com/fme/2017.1/html/FME_Desktop_Documentation/FME_Workbench/Workbench/published_private_parameters.htm)
 --- | --- | ---
 token|  |	@Value(token)
 subnetworkName| Subnetwork Name| ${SunetworkName}
