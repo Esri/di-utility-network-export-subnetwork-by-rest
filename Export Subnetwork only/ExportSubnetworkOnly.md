@@ -1,6 +1,6 @@
 # export-subnetwork-only
  
-This solution uses the JSON return of the Export Subnetwork REST api and relies only on its supported parameters. These parameters as configured by the author are very powerful and can also be parameterized, if desired.
+This solution uses the JSON return of the Export Subnetwork REST api and relies on its supported parameters only. These api parameters are configured in the solution, parameterized as Query String parameters of the HTTPCaller transformer.
 
 ## Instructions
 1. Fork and then clone the repo. 
@@ -14,9 +14,11 @@ This solution uses the JSON return of the Export Subnetwork REST api and relies 
 > If the query string parameters of the Export Subnetwork is configured sufficiently for the destination data, there is no further configuration needed.<br/>
 
 Optional:
-4. Reconfigure the following Query String parameters of the Export Subnetwork HTTPCaller using the GP pane tool as reference.
-![Query String Parameters of Export Subnetwork][def]
+4. Reconfigure the following Query String parameters of the Export Subnetwork HTTPCaller below
+![Query String Parameters of Export Subnetwork][HTTPCaller query string] <br/>
 
+using the GP pane tool as reference, below.
+![Export Subnetwork GP pane populated][ExportSub GP pane]
 
 ## Query String Parameters
 
@@ -111,4 +113,5 @@ The current configuration are below:
 [](Esri Tags: Utility Network)
 
 
-[def]: image.png
+[HTTPCaller query string]: image.png
+[ExportSub GP pane]: image-1.png
