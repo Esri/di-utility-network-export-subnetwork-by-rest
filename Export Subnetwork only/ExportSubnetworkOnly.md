@@ -1,6 +1,6 @@
 # export-subnetwork-only
  
-This solution transforms into several output formats the JSON return of the Export Subnetwork REST api. The api parameters are configured in the solution and parameterized as Query String parameters of the HTTPCaller transformer. The solution does not cover other customer data that are found in the feature layers. See [export-subnetwork-plus-customer-fields ](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20plus%20customer%20fields/ExportSubnetworkPlusCustomer%20Fields.md#export-subnetwork-plus-customer-fields) folder for an advanced solution.
+This solution transforms into several output formats the JSON return of the Export Subnetwork REST api. The api parameters are configured in the solution and parameterized as Query String parameters of the HTTPCaller transformer. The solution does not cover other customer data that are found in the feature layers, unless configured in the ```resultTypeFields``` array of the ```resultTypes``` parameter. See [export-subnetwork-plus-customer-fields ](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20plus%20customer%20fields/ExportSubnetworkPlusCustomer%20Fields.md#export-subnetwork-plus-customer-fields) folder for an advanced solution.
 
 ## Instructions
 1. Fork and then clone the repo. 
@@ -119,10 +119,11 @@ The next two are also for the Query string parameters and there are no exact equ
 
 ```
 
-## Suggestions for configuring ExportSubnetwork
-5. Configure the Export Subnetwork rest API http caller to your desired tool parameters. Start with Pro, configure the GP tool, then run. Capture the paramteres using a tool like Fiddler or Postman.
-
-
+## Suggestions for configuring ExportSubnetwork HttpCaller
+1. Start with Pro, and configure the GP tool to your expected output.
+2. Before you run the GP tool, setup Fiddler or Postman to capture the web traffic between Pro and the ArcGIS Server hosting your utility network.
+3. Run the tool and capture the Export subnetwork configuration and the output JSON from your capturing tool. 
+4. Use both JSONs to configure in your own settings.
 
 
 [^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
