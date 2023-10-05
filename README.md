@@ -16,17 +16,12 @@ Converts JSON result of an export subnetwork REST API call to the following outp
 ## Limitations
 Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
 
-
 ## Solutions
-1. Export Subnetwork only
+1. [Export Subnetwork only](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20only) - 
 <br/>
+
+2. [Export Subnetwork plus customer fields](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20plus%20customer%20fields)
 <br/>
-
-2. Export Subnetwork plus customer fields
-
-
-
-
 
 ## Instructions
 1. Fork and then clone the repo. 
@@ -92,7 +87,7 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Licensing
-Copyright 2021 Esri
+Copyright 2023 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
