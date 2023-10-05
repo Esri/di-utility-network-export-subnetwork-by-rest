@@ -11,17 +11,20 @@ Leveraging Data for External Systems - Automating Export Subnetwork using Data I
 You can still find the blog's workspace solution [from part two of the blog](https://community.esri.com/t5/arcgis-utility-network-documents/sample-workbench-file-leveraging-data-for-external/ta-p/1053123) or in this repo's [UNv3 release page.](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/releases/tag/v2.6.0)
 
 ## Features
-Converts JSON result of an export subnetwork REST API call to the following outputs: File GDB, CAD and shapefile.
+Converts JSON result of an export subnetwork REST API call to the following outputs: Mobile GDB, File GDB, CAD and shapefile.
 
 ## Limitations
-Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
+1. Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
+2. No filters or validation were made for Subnetworks where ```ISDIRTY = 1```.
+3. To visualize the solution easier in full view, dynamic schemas were used for the outputs. No attempts Were made to clean up attributes for the destination formats, except for the following:
+   a. removed attributes that have more than 31 characters (limitation of mobile gdb)
+   b. removed duplicate attributes that cause errors when writing.
+   c. attribute values of shapefiles were left unpopulated when field names are truncated to the limit of nine characters.
 
 ## Solutions
-1. [Export Subnetwork only](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20only) - 
-<br/>
+1. [Export Subnetwork only](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20only) 
 
 2. [Export Subnetwork plus customer fields](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20plus%20customer%20fields)
-<br/>
 
 ## Instructions
 1. Fork and then clone the repo. 
