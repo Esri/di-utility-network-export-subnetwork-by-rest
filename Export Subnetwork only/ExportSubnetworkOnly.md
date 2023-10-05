@@ -1,6 +1,6 @@
 # export-subnetwork-only
  
-This solution uses the JSON return of the Export Subnetwork REST api and relies on its supported parameters only. These api parameters are configured in the solution, parameterized as Query String parameters of the HTTPCaller transformer.
+This solution transforms into several output formats the JSON return of the Export Subnetwork REST api. The api parameters are configured in the solution and parameterized as Query String parameters of the HTTPCaller transformer. The solution does not cover other customer data that are found in the feature layers. See [export-subnetwork-plus-customer-fields ](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20plus%20customer%20fields/ExportSubnetworkPlusCustomer%20Fields.md#export-subnetwork-plus-customer-fields) folder for an advanced solution.
 
 ## Instructions
 1. Fork and then clone the repo. 
@@ -8,12 +8,11 @@ This solution uses the JSON return of the Export Subnetwork REST api and relies 
 > If you do not intend to contribute to this repo, you can just download the workspace tempalte (fmwt file).
 2. Unzip to your desired destination and open the ExportSubnetworkV6.fmwt FME workspace template (fmwt) file using Data Interoperability workbench app. You can also double-click to open.
 > [!NOTE]
-> a. Since this template includes a cache, you would able to run and view the data that was used for the solution, without being ocnnected to the configured utility  network.
-> b. However, the solution is meant as a guide. The provided workspace will not run your own enterprise utility network dataset correctly without any re-configuration. 
+> Since this template includes a cache, you would able to run and view the data that was used for the solution, without being connected to the configured utility  network However, the solution is meant as a guide. The provided workspace will not run your own enterprise utility network dataset correctly without any re-configuration. 
 
 3. Re-configure the workspace to your own utility network. 
 > [!IMPORTANT]
-> a. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the [ESRIOnlineTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter) will need to be replaced by an HTTPCaller using that new web connection. 
+> a. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the [ESRIOnlineTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter) will need to be replaced by an HTTPCaller using that new web connection. <br/>
 > b. If the query string parameters configuration - [ see below](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20only/ExportSubnetworkOnly.md#query-string-parameters) - of this solution sufficiently for the destination data, there is no further configuration needed.<br/>
 
 Optional:
