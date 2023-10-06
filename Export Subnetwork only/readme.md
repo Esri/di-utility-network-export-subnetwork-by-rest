@@ -128,5 +128,5 @@ The next two are also for the Query string parameters and there are no exact equ
 
 [^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
 
-[HTTPCaller query string]: Export%20Subnetwork%20only/httpcallerquerystring.png
-[ExportSub GP pane]: Export%20Subnetwork%20only/exportSubnetworkGpTool.png
+[HTTPCaller query string]: ./Export%20Subnetwork%20only/httpcallerquerystring.png
+[ExportSub GP pane]: ./Export%20Subnetwork%20only/exportSubnetworkGpTool.png
