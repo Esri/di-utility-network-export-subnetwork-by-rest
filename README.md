@@ -23,10 +23,13 @@ Converts JSON result of an export subnetwork REST API call to the following outp
 ## Solutions
 1. [Export Subnetwork only](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20only) 
 2. [Export Subnetwork plus customer fields](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20plus%20customer%20fields)
-3. [Helper workspace template](https://) to use for populating your user parameters for Domain network, Tier name, Subnetwork name. The helper list will also generate a list of subnetworks to use for automating Export Subnetwork for your entire utility network dataset.
+3. [Helper workspace template](ListSubnetworksServer.fmwt) to use for populating your user parameters for Domain network, Tier name, Subnetwork name. The helper list will also generate a list of subnetwork to use for automating Export Subnetwork for your entire utility network dataset. 
+
+![Note] 
+>This solution uses the ArcGIS Server feature service reader format which is new to Pro 3.1. For earlier versions of Pro use the HTTPCaller configuring the query rest endpoint of the Subnetworks (id=5000002) feature layer
 
 ## Instructions
-Each solution will have their respective instructions to follow.
+Solutions 1 and 2 will have their respective instructions md file. For the helper file, there is an annotation on the worksapce canvass to follow.
 
 
 ## Requirements
@@ -40,6 +43,7 @@ Each solution will have their respective instructions to follow.
 3. Use the Play buttons on the canvass object as you tweak the existing solution,  until you get to your destination datasets.
 4. When configuring your own utlity network for this solution, leave the existing format reader on the canvas and use the Add reader tool. After the schema hydrates connect to the existing transformer from which the original reader is connected to. Once the new feature types is connected to the transformer, you can delete the original reader from the navigation pane.
 5. When you are satisfied with the state of your solution, you can disable both Feature Cache and Feature Counts. 
+6. If you are reauthoring your solution to have multiple outputs, test the solution one format at a time. 
 
 
 ## Resources
