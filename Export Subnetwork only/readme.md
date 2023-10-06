@@ -128,5 +128,5 @@ The next two are also for the Query string parameters and there are no exact equ
 
 [^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
 
-[HTTPCaller query string]: Export Subnetwork only\httpcallerquerystring.png
-[ExportSub GP pane]: Export Subnetwork only\exportSubnetworkGpTool.png
+[HTTPCaller query string]: https://github.com/ArcGIS/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20only/httpcallerquerystring.png
+[ExportSub GP pane]: https://github.com/ArcGIS/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20only/exportSubnetworkGpTool.png
