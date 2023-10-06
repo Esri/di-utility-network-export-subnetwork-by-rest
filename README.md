@@ -21,15 +21,15 @@ Converts JSON result of an export subnetwork REST API call to the following outp
  ```
 
 ## Solutions
-1. [Export Subnetwork only](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20only) 
-2. [Export Subnetwork plus customer fields](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20plus%20customer%20fields)
+1. [Export Subnetwork only](Export Subnetwork only\ExportSubnetworkV6.fmwt) 
+2. [Export Subnetwork plus customer fields](Export Subnetwork plus customer fields\ExportSubnetworkV6Advanced.fmwt)
 3. [Helper workspace template](ListSubnetworksServer.fmwt) to use for populating your user parameters for Domain network, Tier name, Subnetwork name. The helper list will also generate a list of subnetwork to use for automating Export Subnetwork for your entire utility network dataset. 
 
 > [!NOTE] 
 >The helper solution uses the ArcGIS Server feature service reader format which is new to Pro 3.1. The advantage of using this format is there is no JSON to parse and no max record counts and paging to consider. For earlier versions of Pro use the HTTPCaller configuring the query rest endpoint of the ```Layer: Subnetworks (ID: 500002)```. 
 
 ## Instructions
-Solutions 1 and 2 will have their respective instructions md file. For the helper file, there is an annotation on the worksapce canvass to follow.
+Solutions 1 and 2 will have instructions in their respective readme.md file. For the helper file, there is an annotation on the worksapce canvass to follow.
 
 
 ## Requirements
