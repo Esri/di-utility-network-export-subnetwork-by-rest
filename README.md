@@ -21,8 +21,8 @@ Converts JSON result of an export subnetwork REST API call to the following outp
  ```
 
 ## Solutions
-1. [Export Subnetwork only](Export Subnetwork only\ExportSubnetworkV6.fmwt) 
-2. [Export Subnetwork plus customer fields](Export Subnetwork plus customer fields\ExportSubnetworkV6Advanced.fmwt)
+1. [Export Subnetwork only](https://github.com/ArcGIS/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20only/ExportSubnetworkV6.fmwt) 
+2. [Export Subnetwork plus customer fields](https://github.com/ArcGIS/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20plus%20customer%20fields/ExportSubnetworkV6Advanced.fmwt)
 3. [Helper workspace template](ListSubnetworksServer.fmwt) to use for populating your user parameters for Domain network, Tier name, Subnetwork name. The helper list will also generate a list of subnetwork to use for automating Export Subnetwork for your entire utility network dataset. 
 
 > [!NOTE] 
