@@ -22,22 +22,13 @@ If your network dataset is small enough,  the second option is to read the whole
 > [!IMPORTANT]
 > If the query string parameters of the Export Subnetwork is configured sufficiently for the destination data, there is no further configuration needed.<br/>
 
-Optional:
-4. Reconfigure the following Query String parameters of the Export Subnetwork HTTPCaller below <br/>
-![Query String Parameters of Export Subnetwork][HTTPCaller query string] <br/>
-
-using the GP tool pane as reference, below.<br/>
-![Export Subnetwork GP pane populated][ExportSub GP pane]<br/>
-
-
-
-## Export Subnetwork HTTPCaller Configuration
-
-The current solution configuration are below:
-
-## Suggestions for configuring ExportSubnetwork
-5. Configure the Export Subnetwork rest API http caller to your desired tool parameters. Start with Pro, configure the GP tool, then run. Capture the paramteres using atool like Fiddler or Postman.
+4. 
+> [!IMPORTANT]
+> To visualize the solution easier in full extent, dynamic schemas were used for the outputs. No attempts Were made to clean up attributes for the destination formats, except for the following:<br/>
+>   - removed attributes that have more than 31 characters (limitation of mobile gdb)<br/>
+>   - removed duplicate attributes that caused errors when writing.<br/>
+>   - attribute values of shapefiles were left unpopulated when field names are truncated to the limit of nine characters.<br/>
 
 
-[HTTPCaller query string]: /image.png
-[ExportSub GP pane]: /image-1.png
+
+

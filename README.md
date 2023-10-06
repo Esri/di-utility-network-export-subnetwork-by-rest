@@ -15,28 +15,18 @@ Converts JSON result of an export subnetwork REST API call to the following outp
 
 ## Limitations
 1. Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
-2. No filters or validation were made for Subnetworks where ```ISDIRTY = 1```.
-3. To visualize the solution easier in full view, dynamic schemas were used for the outputs. No attempts Were made to clean up attributes for the destination formats, except for the following:
-   a. removed attributes that have more than 31 characters (limitation of mobile gdb)
-   b. removed duplicate attributes that cause errors when writing.
-   c. attribute values of shapefiles were left unpopulated when field names are truncated to the limit of nine characters.
+2. No filters or validation were made for Subnetworks where ```ISDIRTY = 1```. If an attempt was made to exporty a dirty subnetwork, the JSON return on the Export Subnetwork HTTPCaller will return the following error code and message:
+ ```
+  "extendedCode": -2147208457, "message": "Dirty subnetwork cannot be exported.",
+ ```
 
 ## Solutions
 1. [Export Subnetwork only](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20only) 
-
 2. [Export Subnetwork plus customer fields](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/tree/main/Export%20Subnetwork%20plus%20customer%20fields)
+3. [Helper workspace template](https://) to use for populating your user parameters for Domain network, Tier name, Subnetwork name. The helper list will also generate a list of subnetworks to use for automating Export Subnetwork for your entire utility network dataset.
 
 ## Instructions
-1. Fork and then clone the repo. 
-> [!NOTE]
-> If you do not intend to contribute to this repo, you can just download the worksapce tempalte (fmwt file).
-2. Unzip to your desired destination and open the FME workspace template (fmwt) file using Data Interoperability workbench app. 
-> [!NOTE]
-> The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the [ESRIOnlineTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter) will need to be replaced by an HTTPCaller using that new web connection. 
-3. Re-configure the workspace to your own utility network. 
-> [!IMPORTANT]
-> Since utility networks are not created exactly with the same schema, after you configured your readers to your own utility network, it is highly possible that source attributes, some transformers, and writers will have to be reconfigured to your schema to work. Best efforts were made to provide dynamic features in the workflow. However, changes will have to be applied in your own solution to make this work. This is a known behavior of the Workbench app when reading source datasets into the workflow canvass. For aditional help read the [Suggestions for reconfiguring the solution](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/README.md#suggestions-for-reconfiguring-the-solution) section below.
-
+Each solution will have their respective instructions to follow.
 
 
 ## Requirements
