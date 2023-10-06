@@ -26,7 +26,7 @@ Converts JSON result of an export subnetwork REST API call to the following outp
 3. [Helper workspace template](ListSubnetworksServer.fmwt) to use for populating your user parameters for Domain network, Tier name, Subnetwork name. The helper list will also generate a list of subnetwork to use for automating Export Subnetwork for your entire utility network dataset. 
 
 > [!NOTE] 
->The helper solution uses the ArcGIS Server feature service reader format which is new to Pro 3.1. For earlier versions of Pro use the HTTPCaller configuring the query rest endpoint of the ```Layer: Subnetworks (ID: 500002)```.
+>The helper solution uses the ArcGIS Server feature service reader format which is new to Pro 3.1. The advantage of using this format is there is no JSON to parse and no max record counts and paging to consider. For earlier versions of Pro use the HTTPCaller configuring the query rest endpoint of the ```Layer: Subnetworks (ID: 500002)```. 
 
 ## Instructions
 Solutions 1 and 2 will have their respective instructions md file. For the helper file, there is an annotation on the worksapce canvass to follow.
@@ -62,6 +62,8 @@ Utility Network blogs (latest on top):<br/>
 
 Name and Link | Pro/Enterprise Version | Date
 --- | --- | ---
+[Network Integrations](https://www.esri.com/arcgis-blog/products/utility-network/electric-gas/utility-network-journey-network-integrations/)| 3.0/11.1 |6/13/2023
+[Parsing Utility Network JSON Files (Python)](https://community.esri.com/t5/arcgis-utility-network-documents/parsing-utility-network-json-files/ta-p/1314718/jump-to/first-unread-message)| 3.1/11.1 |8/31/2023
 [Adding Description to Export Subnetwork JSON blog](https://community.esri.com/t5/arcgis-utility-network-questions/adding-descriptions-to-export-subnetwork-json/m-p/367933)| 2.4 |	3/10/2020
 [Command line automation for Utility Network blog](https://www.esri.com/arcgis-blog/products/utility-network/administration/automating-utility-network-functions-using-command-line/)| 2.1/10.6	| 6/5/2018
 [Web Trace tool Blog](https://www.esri.com/arcgis-blog/products/utility-network/data-management/a-technical-walk-through-for-a-simple-utility-network-web-trace-tool-with-javascript/) | 2.1/10.6 | 2/28/2018
