@@ -2,13 +2,13 @@
  
 This is a more complex solution that merges the JSON return of the Export Subnetwork REST api with the feature layers of your utility network. Most integrations with the utility network with 3rd party applications rely on other customer fields that are stored in the attribute table of each feature layer participating in the dataset.
 
-While Export Subnetwork Rest API has a configurable ```resultTypeFields``` array in the ```resultTypes``` parameter that would export the fields, it is very tedious to configure and would still require domain descriptions to be pulled from the feature service properties. 
+While Export Subnetwork Rest API has a configurable ```resultTypeFields``` array in the ```resultTypes``` parameter that would export the fields, it is very tedious to configure and would some more JSON parsing in the solution. 
 
-There are two options to add this in the solution. 
+There are two options to add this to the solution. 
 
-The ideal option is to query the features of your network dataset using the globalid of the features returned by the Export Subnetwork REST API so you can merge their attributes into the your data stream. 
+The ideal option is to query the features of your network dataset using the globalid of the features returned by the Export Subnetwork REST API so you can merge their attributes into your data stream. 
 
-If your network dataset is small enough,  the second option is to read the whole network dataset and let the solution filter out the merged features into the solution. Since my sample is fairly small and simple with eight circuits, I'll use the second option for this advanced solution.
+If your network dataset is small enough,  the second option is to read the whole network dataset and let the solution filter out the merged features into the solution. Since my sample is fairly small and simple with eight circuits, I'll use the second option for this advanced solution. This option will be not ideal for medium to large datasets.
 
 ## Instructions
 1. Fork and then clone the repo. 
