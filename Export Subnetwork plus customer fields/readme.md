@@ -2,7 +2,7 @@
  
 This is a more complex solution that merges the JSON return of the Export Subnetwork REST api with the feature layers of your utility network. Most integrations with the utility network with 3rd party applications rely on other customer fields that are stored in the attribute table of each feature layer participating in the dataset.
 
-While Export Subnetwork Rest API has a configurable ```resultTypeFields``` array in the ```resultTypes``` parameter that would export the fields, it is very tedious to configure and would some more JSON parsing in the solution. 
+While Export Subnetwork Rest API has a configurable ```resultTypeFields``` array in the ```resultTypes``` parameter that would export the fields, it is very tedious to configure and would need more JSON parsing in the solution. 
 
 There are two options to add this to the solution. 
 
