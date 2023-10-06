@@ -18,13 +18,14 @@ If your network dataset is small enough,  the second option is to read the whole
 
 > [!NOTE]
 > The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web service and a web connection must be created in the Workbench app. The [ESRIOnlineTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter) will need to be replaced by an HTTPCaller using that new web connection. 
+
 3. Re-configure the workspace to your own utility network. 
 > [!IMPORTANT]
 > If the query string parameters of the Export Subnetwork is configured sufficiently for the destination data, there is no further configuration needed.<br/>
 
-4. 
+4. To visualize the solution easier in full extent, dynamic schemas were used for the outputs. You can opt to replace dynamic workflow with transformers that you can manage the schema and destination formats in a more deliberate way.
 > [!IMPORTANT]
-> To visualize the solution easier in full extent, dynamic schemas were used for the outputs. No attempts Were made to clean up attributes for the destination formats, except for the following:<br/>
+> No attempts Were made to clean up attributes for the destination formats, except for the following:<br/>
 >   - removed attributes that have more than 31 characters (limitation of mobile gdb)<br/>
 >   - removed duplicate attributes that caused errors when writing.<br/>
 >   - attribute values of shapefiles were left unpopulated when field names are truncated to the limit of nine characters.<br/>

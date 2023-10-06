@@ -15,7 +15,7 @@ Converts JSON result of an export subnetwork REST API call to the following outp
 
 ## Limitations
 1. Utility Networks that are stored in file geodatabase or mobile geodatabases are out of scope.
-2. No filters or validation were made for Subnetworks where ```ISDIRTY = 1```. If an attempt was made to exporty a dirty subnetwork, the JSON return on the Export Subnetwork HTTPCaller will return the following error code and message:
+2. No filters or validation were made for Subnetworks where ```ISDIRTY = 1```. If an attempt was made to export a dirty subnetwork, the JSON return on the Export Subnetwork HTTPCaller will return the following error code and message:
  ```
   "extendedCode": -2147208457, "message": "Dirty subnetwork cannot be exported.",
  ```
