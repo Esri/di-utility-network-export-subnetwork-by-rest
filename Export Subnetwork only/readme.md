@@ -57,8 +57,11 @@ The next two are also for the Query string parameters and there are no exact equ
 	"includeStructures": true,
 	"includeBarriers": true,
 	"validateConsistency": true,
+	"validateLocatability": true,
 	"includeIsolated": false,
 	"ignoreBarriersAtStartingPoints": false,
+	"includeUpToFirstSpatialContainer": false,
+	"allowIndeterminateFlow": true,
 	"domainNetworkName": "",
 	"tierName": "",
 	"targetTierName": "",
@@ -89,33 +92,172 @@ The next two are also for the Query string parameters and there are no exact equ
 
 ```
 [
-  {
-    "type": "features",
-    "includeGeometry": true,
-    "includeDomainDescriptions" : true,
-    "includePropagatedValues": false,
-    "networkAttributeNames": [],
-    "diagramTemplateName": "",
-    "resultTypeFields": []
-  },
-  {
-    "type": "connectivity",
-    "includeGeometry": true,
-    "includeDomainDescriptions" : true,
-    "includePropagatedValues": false,
-    "networkAttributeNames": [],
-    "diagramTemplateName": "",
-    "resultTypeFields": []
-  },
-  {
-    "type": "associations",
-    "includeGeometry": true,
-    "includeDomainDescriptions" : true,
-    "includePropagatedValues": false,
-    "networkAttributeNames": [],
-    "diagramTemplateName": "",
-    "resultTypeFields": []
-  }
+	{
+		"type": "features",
+		"includeGeometry": true,
+		"includeDomainDescriptions": true,
+		"includePropagatedValues": false,
+		"networkAttributeNames": [
+			"Asset type",
+			"Available Duct Capacity",
+			"Assembly Asset Group",
+			"Asset group",
+			"Ducts Available",
+		],
+		"diagramTemplateName": "",
+		"resultTypeFields": [
+			{
+				"networkSourceId": 11,
+				"fieldName": "devicestatus"
+			},
+			{
+				"networkSourceId": 9,
+				"fieldName": "normaldevicestatus"
+			},
+			{
+				"networkSourceId": 15,
+				"fieldName": "phasescurrent"
+			},
+			{
+				"networkSourceId": 12,
+				"fieldName": "manufacturer"
+			},
+			{
+				"networkSourceId": 14,
+				"fieldName": "phasescurrent"
+			},
+			{
+				"networkSourceId": 10,
+				"fieldName": "sharedneutral"
+			},
+			{
+				"networkSourceId": 6,
+				"fieldName": "addcount"
+			},
+			{
+				"networkSourceId": 8,
+				"fieldName": "ductavailable"
+			},
+			{
+				"networkSourceId": 4,
+				"fieldName": "highvoltagerisercount"
+			},
+			{
+				"networkSourceId": 7,
+				"fieldName": "installdate"
+			},
+			{
+				"networkSourceId": 5,
+				"fieldName": "diameterwidth"
+			},
+			{
+				"networkSourceId": 11,
+				"fieldName": "SUPPORTEDSUBNETWORKNAME"
+			},
+			{
+				"networkSourceId": 9,
+				"fieldName": "loadtapchangepercent"
+			},
+			{
+				"networkSourceId": 15,
+				"fieldName": "phasesenergized"
+			},
+			{
+				"networkSourceId": 12,
+				"fieldName": "maxvoltage"
+			},
+			{
+				"networkSourceId": 14,
+				"fieldName": "TERMINALCONFIGURATION"
+			},
+			{
+				"networkSourceId": 10,
+				"fieldName": "measuredlength"
+			},
+			{
+				"networkSourceId": 6,
+				"fieldName": "materialcode"
+			},
+			{
+				"networkSourceId": 8,
+				"fieldName": "availablecapacity"
+			},
+			{
+				"networkSourceId": 4,
+				"fieldName": "materialcode"
+			},
+			{
+				"networkSourceId": 7,
+				"fieldName": "lifecyclestatus"
+			},
+			{
+				"networkSourceId": 5,
+				"fieldName": "materialsoil"
+			},
+			{
+				"networkSourceId": 11,
+				"fieldName": "lifecyclestatus"
+			},
+			{
+				"networkSourceId": 9,
+				"fieldName": "manufacturer"
+			},
+			{
+				"networkSourceId": 15,
+				"fieldName": "phasesnormal"
+			},
+			{
+				"networkSourceId": 12,
+				"fieldName": "numphasesconstructed"
+			},
+			{
+				"networkSourceId": 14,
+				"fieldName": "phasessubstituted"
+			},
+			{
+				"networkSourceId": 10,
+				"fieldName": "commonconductortype"
+			},
+			{
+				"networkSourceId": 6,
+				"fieldName": "inservicedate"
+			},
+			{
+				"networkSourceId": 8,
+				"fieldName": "assetid"
+			},
+			{
+				"networkSourceId": 4,
+				"fieldName": "foundationtype"
+			},
+			{
+				"networkSourceId": 7,
+				"fieldName": "wallid"
+			},
+			{
+				"networkSourceId": 5,
+				"fieldName": "distance"
+			}
+		]
+	},
+	{
+		"type": "connectivity",
+		"includeGeometry": true,
+		"includeDomainDescriptions": true,
+		"includePropagatedValues": false,
+		"networkAttributeNames": [],
+		"diagramTemplateName": "",
+		"resultTypeFields": []
+	},
+	{
+		"type": "associations",
+		"includeGeometry": true,
+		"includeDomainDescriptions": true,
+		"includePropagatedValues": false,
+		"networkAttributeNames": [],
+		"diagramTemplateName": "",
+		"resultTypeFields": []
+	}
 ]
 
 ```
