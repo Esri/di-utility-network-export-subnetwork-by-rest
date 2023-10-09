@@ -13,7 +13,7 @@ This solution transforms into several output formats the JSON return of the Expo
 
 3. Re-configure the workspace to your own utility network. 
 > [!IMPORTANT]
-> a. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the [ESRIPortalTokenGetter]([https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter](https://hub.safe.com/publishers/bruceharold/transformers/esriportaltokengetter)) will need to be replaced by an HTTPCaller using that new web connection. <br/>
+> a. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web connection must be created and the [ESRIPortalTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esriportaltokengetter) will need to be replaced by an HTTPCaller using that new web connection. <br/>
 > b. If the query string parameters configuration - [ see below](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20only/ExportSubnetworkOnly.md#query-string-parameters) - of this solution is sufficient for your destination data, there is no further configuration needed.<br/>
 
 Optional:
