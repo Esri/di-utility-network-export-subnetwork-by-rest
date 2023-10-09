@@ -268,8 +268,15 @@ The next two are also for the Query string parameters and there are no exact equ
 3. Run the tool and capture the Export subnetwork configuration and the output JSON from your capturing tool. 
 4. Use both JSONs to configure in your own settings.
 
+## Best patterns when JSON parsing
+1. JSONFlattener is better for a single element, while JSONFragmenters are goord for arrays and arrays within arrays.
+2. When JSON transformers are used in your canvass, its always necessary to Expose attributes. Both transformers have a parameter called Attributes to Espose, however, its best to add an AttributeExposer after each JSON transformer to utilize a feature cache feature called Import from feature cache (below).
+![Import feature cache][import feature cache]
+3. For arrays within arrays (```fieldValues``` and ```networkAttributes```), expose the name in the AttributeExposer and then add a separate stream for their elements. Merge them back later into their related parent feature. 
+ <br/>
 
 [^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
 
 [HTTPCaller query string]: ./httpcallerquerystring.png
 [ExportSub GP pane]: ./exportSubnetworkGpTool.png
+[import feature cache]: ./importfeaturecache.png
