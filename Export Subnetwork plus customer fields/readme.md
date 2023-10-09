@@ -17,7 +17,7 @@ If your network dataset is small enough,  the second option is to read the whole
 2. Unzip to your desired destination and open the ExportSubnetworkV6Advanced.fmwt FME workspace template (fmwt) file using Data Interoperability workbench app. You can also double-click to open.
 
 > [!NOTE]
-> The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web service and a web connection must be created in the Workbench app. The [ESRIOnlineTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esrionlinetokengetter) will need to be replaced by an HTTPCaller using that new web connection. 
+> The solution is meant as a guide. The provided workspace will not run without configuring your own enterprise utility network dataset correctly. The token getter is configured to work with Basic authentication using the UN owner account username and password. If you use OAUTH2 or other authentication types for your dataset, a web service and a web connection must be created in the Workbench app. The [ESRIPortalTokenGetter](https://hub.safe.com/publishers/bruceharold/transformers/esriportaltokengetter) will need to be replaced by an HTTPCaller using that new web connection. 
 
 3. Re-configure the workspace to your own utility network. 
 > [!IMPORTANT]
