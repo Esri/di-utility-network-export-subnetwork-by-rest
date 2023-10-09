@@ -5,10 +5,11 @@ This solution transforms into several output formats the JSON return of the Expo
 ## Instructions
 1. Fork and then clone the repo. 
 > [!NOTE]
-> If you do not intend to contribute to this repo, you can just download the workspace template (fmwt) file.
+> If you do not intend to contribute to this repo, you can download the workspace template (fmwt) file.<br/>
 2. Unzip to your desired destination and open the ExportSubnetworkV6.fmwt FME workspace template (fmwt) file using Data Interoperability workbench app. You can also double-click to open.
 > [!NOTE]
-> Since this template includes a cache, you would able to run and view the data that was used for the solution, without being connected to the configured utility  network However, the solution is meant as a guide. The provided workspace will not run your own enterprise utility network dataset correctly without any re-configuration. 
+> Since this template includes a cache, as soon as oyu open the template, you would able to see the data on the canvass in various stages of the translation without being connected to the configured utility network. However, once you run the template, the workspace will attempt to reconnect to the feature service and you will lose the cache.
+> The solution is meant as a guide. The provided workspace will not run your own enterprise utility network dataset correctly without any re-configuration. <br/>
 
 3. Re-configure the workspace to your own utility network. 
 > [!IMPORTANT]
