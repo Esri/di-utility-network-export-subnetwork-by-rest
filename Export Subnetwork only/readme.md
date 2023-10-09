@@ -1,6 +1,6 @@
 # export-subnetwork-only
  
-This solution transforms into several output formats the JSON return of the Export Subnetwork REST api. The api parameters are configured in the solution and parameterized as Query String parameters of the HTTPCaller transformer. The solution does not cover other customer data that are found in the feature layers, unless configured in the ```resultTypeFields``` array of the ```resultTypes``` parameter. See [export-subnetwork-plus-customer-fields ](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20plus%20customer%20fields/ExportSubnetworkPlusCustomer%20Fields.md#export-subnetwork-plus-customer-fields) folder for an advanced solution.
+This solution transforms into several output formats the JSON return of the Export Subnetwork REST api. The api parameters are configured in the solution and parameterized as Query String parameters of the HTTPCaller transformer. The solution does not cover other customer data that are found in the feature layers unless configured in the ```resultTypeFields``` array of the ```resultTypes``` parameter. See [export-subnetwork-plus-customer-fields ](https://github.com/salvaleonrp/di-utility-network-export-subnetwork-by-rest/blob/main/Export%20Subnetwork%20plus%20customer%20fields/ExportSubnetworkPlusCustomer%20Fields.md#export-subnetwork-plus-customer-fields) folder for an advanced solution.
 
 ## Instructions
 1. Fork and then clone the repo. 
@@ -8,7 +8,7 @@ This solution transforms into several output formats the JSON return of the Expo
 > If you do not intend to contribute to this repo, you can download the workspace template (fmwt) file.<br/>
 2. Unzip to your desired destination and open the ExportSubnetworkV6.fmwt FME workspace template (fmwt) file using Data Interoperability workbench app. You can also double-click to open.
 > [!NOTE]
-> Since this template includes a cache, when you open the template, you will see the data on the canvass in various stages of the translation without being connected to the configured utility network. However, once you run the template, the workspace will attempt to reconnect to the feature service and you will lose the cache.
+> Since this template includes a cache, when you open the template, you will see the data on the canvas in various stages of the translation without being connected to the configured utility network. However, once you run the template, the workspace will attempt to reconnect to the feature service and you will lose the cache.
 > The solution is meant as a guide. The provided workspace will not run your own enterprise utility network dataset correctly without any re-configuration. <br/>
 
 3. Re-configure the workspace to your own utility network. 
@@ -27,7 +27,7 @@ using the GP tool pane as reference, below.<br/>
 
 ## Export Subnetwork HTTPCaller Configuration
 
-The current solution configuration are below:
+The current solution configuration is below:
 
 Request URL: $(HostUrl)/server/rest/services/NapervilleElectric31_SQLServer/UtilityNetworkServer/exportSubnetwork
 HTTP Method: Get
@@ -264,13 +264,13 @@ The next two are also for the Query string parameters and there are no exact equ
 
 ## Suggestions for configuring ExportSubnetwork HttpCaller
 1. Start with Pro, and configure the GP tool to your expected output.
-2. Before you run the GP tool, setup Fiddler or Postman to capture the web traffic between Pro and the ArcGIS Server hosting your utility network.
+2. Before you run the GP tool, use Fiddler or Postman to capture the web traffic between Pro and the ArcGIS Server hosting your utility network.
 3. Run the tool and capture the Export subnetwork configuration and the output JSON from your capturing tool. 
 4. Use both JSONs to configure in your own settings.
 
 ## Best patterns when JSON parsing
-1. JSONFlattener is better for a single element, while JSONFragmenters are goord for arrays and arrays within arrays.
-2. When JSON transformers are used in your canvass, its always necessary to Expose attributes. Both transformers have a parameter called Attributes to Espose, however, its best to add an AttributeExposer after each JSON transformer to utilize a feature cache feature called Import from feature cache (below).
+1. JSONFlattener is better for a single element, while JSONFragmenters are good for arrays and arrays within arrays.
+2. When JSON transformers are used in your canvas, it is always necessary to expose attributes flattened from the JSON. Both transformers have a parameter called Attributes to Expose but you have to know the attribute name to expose. So it's best to add an AttributeExposer after each JSON transformer to utilize a feature cache feature called Import from feature cache (below).
 ![Import feature cache][import feature cache]
 3. For arrays within arrays (```fieldValues``` and ```networkAttributes```), expose the name in the AttributeExposer and then add a separate stream for their elements. Merge them back later into their related parent feature. 
  <br/>
