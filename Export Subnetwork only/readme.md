@@ -264,16 +264,17 @@ The next two are also for the Query string parameters and there are no exact equ
 
 ## Suggestions for configuring ExportSubnetwork HttpCaller
 1. Start with Pro, and configure the GP tool to your expected output.
-2. Before you run the GP tool, use Fiddler or Postman to capture the web traffic between Pro and the ArcGIS Server hosting your utility network.
+2. Before you run the GP tool, use Fiddler Classic or Postman to capture the web traffic between Pro and the ArcGIS Server hosting your utility network.
 3. Run the tool and capture the Export subnetwork configuration and the output JSON from your capturing tool. 
 4. Use both JSONs to configure in your own settings.
 
 ## Best patterns when JSON parsing
 1. JSONFlattener is better for a single element, while JSONFragmenters are good for arrays and arrays within arrays.
-2. When JSON transformers are used in your canvas, it is always necessary to expose attributes flattened from the JSON. Both transformers have a parameter called Attributes to Expose but you have to know the attribute name to expose. So it's best to add an AttributeExposer after each JSON transformer to utilize a feature cache feature called Import from feature cache (below).
+2. When JSON transformers are used in your canvas, it is always necessary to expose attributes flattened from the JSON. Both transformers have a parameter called Attributes to Expose but you have to know the attribute name to expose. So it's best to add an AttributeExposer after each JSON transformer to utilize a feature cache feature called ```Import from feature cache``` (below).
 ![Import feature cache][import feature cache]
 3. For arrays within arrays (```fieldValues``` and ```networkAttributes```), expose the name in the AttributeExposer and then add a separate stream for their elements. Merge them back later into their related parent feature. 
  <br/>
+ 
 
 [^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
 
