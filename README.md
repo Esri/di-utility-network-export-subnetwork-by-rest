@@ -43,7 +43,7 @@ Solutions 1 and 2 will have instructions in their respective readme.md file. For
 3. Use the Play buttons on the canvass object as you tweak the existing solution,  until you get to your destination datasets.
 4. When configuring your own utlity network for this solution, leave the existing format reader on the canvas and use the Add reader tool. After the schema hydrates connect to the existing transformer from which the original reader is connected to. Once the new feature types is connected to the transformer, you can delete the original reader from the navigation pane.
 5. When you are satisfied with the state of your solution, you can disable both Feature Cache and Feature Counts. 
-6. If you are reauthoring your solution to have multiple outputs, test the solution one format at a time. 
+6. If you are reauthoring your solution to have multiple outputs, test the solution one output format at a time. 
 
 
 ## Resources
