@@ -274,6 +274,7 @@ The next two are also for the Query string parameters and there are no exact equ
 ![Import feature cache][import feature cache]
 3. For arrays within arrays (```fieldValues``` and ```networkAttributes```), expose the name in the AttributeExposer and then add a separate stream for their elements. Merge them back later into their related parent feature. 
  <br/>
+ 4. Exposing, keeping, or removing attributes in your translation impacts your destination output attributes so be cautious with these changes.
  
 
 [^1]: _itals_ is alphanumeric, @value() is an attribute value from a feature in the data stream, ${} is a user parameter value configured at run time.
